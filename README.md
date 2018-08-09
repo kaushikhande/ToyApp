@@ -1,24 +1,33 @@
-# README
+# Sample toy application
+## Contents
+* User and Micropost scaffold
+* Root to users#index
+* Validation of user model
+* Validation of micropost model
+* No relation in between them
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
+To get started clone the repo and then install the gems
 
-Things you may want to cover:
+```bash
+$ bundle install --without production
+```
 
-* Ruby version
+Next, migrate the database
 
-* System dependencies
+```bash
+rails db:migrate
+```
 
-* Configuration
+Finally run the test suite to verify that everything is in place
 
-* Database creation
+```bash
+rails test
+```
 
-* Database initialization
+If the test suite passes, the run the application 
+```bash
+rails server
+```
+Open the browser and type localhost:3000 in the url
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
