@@ -16,18 +16,18 @@ $ bundle install --without production
 Next, migrate the database
 
 ```bash
-rails db:migrate
+$ rails db:migrate
 ```
 
 Finally run the test suite to verify that everything is in place
 
 ```bash
-rails test
+$ rails test
 ```
 
 If the test suite passes, the run the application 
 ```bash
-rails server
+$ rails server
 ```
 Open the browser and type localhost:3000 in the url
 
